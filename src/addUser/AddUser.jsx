@@ -22,7 +22,7 @@ const AddUser = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/api/user", user)
+      .post("https://mis-server.vercel.app/api/user", user)
       .then((response) => {
         // console.log("user created successfully");
         toast.success(response.data.message, { position: "top-right" });
