@@ -15,7 +15,7 @@ const AddUser = () => {
 
   const inputHandler = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    // console.log(name, value); 
     setUser({ ...user, [name]: value });
   };
 
